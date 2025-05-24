@@ -25,10 +25,17 @@ npm install tailwindcss @tailwindcss/vite
 
 ```js
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
+
+// https://vite.dev/config/
 export default defineConfig({
-  plugins: [tailwindcss()]
+  plugins: [
+    react(),
+    tailwindcss()
+  ],
 })
+
 ```
 
 3. Update your `src/index.css` file:
